@@ -1,0 +1,13 @@
+{
+	"id": "com.github.tau3000.tibutton",
+	"name": "com.github.tau3000.tibutton",
+	"description" : "replacement for Ti.UI.Button with support for padding and iconic fonts",
+	"author": "Akira Kitauchi",
+	"version": "1.0",
+	"copyright":"Copyright (C) 2014",
+	"license":"Apache License, Version 2.0",
+	"min-alloy-version": "1.0",
+	"min-titanium-version": "3.0",
+	"tags": "button,icon",
+	"platforms": "ios"
+}

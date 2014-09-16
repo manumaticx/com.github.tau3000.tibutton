@@ -1,0 +1,16 @@
+"#outer": {	
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE,
+  //backgroundColor: "#fcc",
+}
+
+"#inner": {
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE,
+  //backgroundColor: "#cfc",
+  touchEnabled: false,
+}
+
+"#label": {
+  touchEnabled: false,
+}
