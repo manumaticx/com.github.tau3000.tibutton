@@ -151,7 +151,7 @@ function _applyLabelProperties(properties) {
   if (!properties) return;
   var apply = _.pick(properties, 'color', 'font');
   
-  if (_.has(properties, title) || _.has(properties, titleid)){
+  if (_.has(properties, "title") || _.has(properties, "titleid")){
     $.label.setText(properties.title || L(properties.titleid, ""));
   }
 
