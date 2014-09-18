@@ -150,7 +150,10 @@ function _applyInnerProperties(properties) {
 function _applyLabelProperties(properties) {
   if (!properties) return;
   var apply = _.pick(properties, 'color', 'font');
-  apply.text = properties.title || L(properties.titleid, "");
+  
+  if (_.has(properties, title) || _.has(properties, titleid)){
+    $.label.setText(properties.title || L(properties.titleid, ""));
+  }
 
   if (_.size(apply)) $.label.applyProperties(apply);
 }
