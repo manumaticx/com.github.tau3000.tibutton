@@ -65,6 +65,8 @@ function applyProperties(properties) {
 
   //Ti.API.info("_applyProperties2:"+JSON.stringify(_properties));
   _applyProperties(_properties);
+  
+  _initted = true;
 }
 
 function setTitle(title) {
