@@ -20,9 +20,17 @@ function _onTouchstart(e) {
 }
 
 function _onTouchmove(e) {
+  var btnWidth = $.outer.size.width;
+  var btnHeight = $.outer.rect.height;
+  
+  if (OS_ANDROID){
+    btnWidth *= Ti.Platform.displayCaps.logicalDensityFactor;
+    btnHeight *= Ti.Platform.displayCaps.logicalDensityFactor;
+  }
+  
   //Ti.API.info("touchmove e.x,y="+[e.x,e.y].join(',')+" size="+[$.outer.size.width,$.outer.size.height].join(','));
-  if (e.x >= 0 && e.x < $.outer.size.width &&
-      e.y >= 0 && e.y < $.outer.rect.height) {
+  if (e.x >= 0 && e.x < btnWidth &&
+      e.y >= 0 && e.y < btnHeight) {
     // outerの中にあれば選択状態
     //Ti.API.info("inside");
     _clicking = true;
